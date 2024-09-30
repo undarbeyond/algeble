@@ -436,7 +436,7 @@ function submitGuess() {
   let answerTiless = [...getAnswerTiles()]
 
   if (eval(ptchange(guess))!=reqGA) {
-    showAlert("Expression mismatch guess")
+    showAlert("Expression mismatch answer")
     shakeTiles(answerTiless, true)
     return
   }
